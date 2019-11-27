@@ -6,7 +6,51 @@
   <title>Document</title>
 
 <style>
-  
+  @keyframes mouvementThree{
+     from{
+      opacity:0;
+    }
+    30%{
+      opacity:0;
+      transform: translateY(+40px);
+
+    }
+
+  }
+    @keyframes mouvementTwo{
+    from{
+      opacity:0;
+    }
+    40%{
+      opacity:0;
+      transform: translateY(+40px);
+
+    }
+
+  }
+  @keyframes mouvementOne{
+     from{
+      opacity:0;
+    }
+    50%{
+      opacity:0;
+      transform: translateY(+40px);
+
+    }
+
+  }
+  h1{
+    position: relative;
+   animation: mouvementThree 2s  ease ;
+
+  }
+  img{position: relative;
+    animation: mouvementOne 4s  ease ;
+  }
+  h1+p{position: relative;
+
+    animation: mouvementTwo 3s  ease ;
+  }
 * {
   box-sizing: border-box;
 }
